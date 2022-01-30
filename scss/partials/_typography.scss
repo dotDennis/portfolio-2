@@ -1,0 +1,51 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  color: $light;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: $yellow;
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  color: $light;
+}
+
+em {
+  color: $yellow;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.cta-scroll {
+  color: $light;
+  transition: opacity 0.15s ease-in-out;
+  &:hover {
+    color: $light;
+    opacity: 0.75;
+    transition: opacity 0.15s ease-in-out;
+  }
+
+  span {
+    font-size: 3.5rem;
+  }
+}
+
+.lead {
+  font-size: 1.2rem;
+  max-width: 50%;
+  margin: 2rem auto 3rem auto;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dennis Løvold</title>
+    <meta name="description" content="Being passionate about web development & design, two years of front-end development at Noroff was an obvious choice. On this website you can see what, how and why I've made websites." />
+    <meta author="Dennis S. Løvold" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- Bootstrap Styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <span id="top" style="position: absolute; opacity: 0"></span>
+    <!-- Span there to act as a link for my anchor tag, styled to make sure it won't mess with site structure. -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark my-2">
+        <div class="container-fluid d-flex justify-content-between">
+          <a class="navbar-brand" href="#top">Dennis Løvold</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav d-flex ms-auto">
+              <li class="nav-item">
+                <a id="aWork" class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a id="aSkills" class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a id="aContact" class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container__hero d-flex flex-column justify-content-center">
+        <h1>Need a new <em>blog</em>?</h1>
+        <p class="lead">Front-End Developer, Dennis Løvold, offering intuitive modern solutions & designs.</p>
+        <a class="cta-scroll" href="#work"><span class="material-icons">keyboard_arrow_down</span></a>
+      </section>
+
+      <section class="container container__work pt-5" id="work">
+        <h2 class="mb-4">Work</h2>
+        <div class="container__cards">
+          <div class="container__card">
+            <div class="card__top">
+              <div class="card__image">
+                <img src="assets/dennis-blog" alt="Thumbnail for a fictional 'personal' blog, featuring me as the author." />
+                <a title="Read more about the project & its features." aria-label="Read about the project" href="project.html?project=blog"></a>
+              </div>
+              <h3>Dennis' Blog</h3>
+              <p>A fictional personal blog, featuring REST API calls through Wordpress.</p>
+            </div>
+            <div class="card__bottom">
+              <a href="project.html?project=blog">Read more</a>
+              <a href="https://exam.dennisl.no/" target="_blank" rel="noreferrer">View website</a>
+            </div>
+          </div>
+          <div class="container__card">
+            <div class="card__top">
+              <div class="card__image">
+                <img src="assets/community-science" alt="Thumbnail for a museum, featuring a dark theme with an orange accent color." />
+                <a title="Read more about the project & its features." aria-label="Read about the project" href="project.html?project=csm"></a>
+              </div>
+              <h3>Community Science Museum</h3>
+              <p>A fictional museum website, heavily focused on design & image optimization</p>
+            </div>
+            <div class="card__bottom">
+              <a href="project.html?project=csm">Read more</a>
+              <a href="https://csm.dennisl.no/" target="_blank" rel="noreferrer">View website</a>
+            </div>
+          </div>
+          <div class="container__card">
+            <div class="card__top">
+              <div class="card__image">
+                <img src="assets/gamehub" alt="Thumbnail for a e-commerce website, featuring dark theme with a yellow accent." />
+                <a title="Read more about the project & its features." aria-label="Read about the project" href="project.html?project=gamehub"></a>
+              </div>
+              <h3>Gamehub</h3>
+              <p>A fictional e-commerce store, featuring products fetched from API, dynamically loaded product pages, shopping cart & more.</p>
+            </div>
+            <div class="card__bottom">
+              <a href="project.html?project=gamehub">Read more</a>
+              <a href="https://gamehub.dennisl.no/" target="_blank" rel="noreferrer">View website</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container container__skills pt-5" id="skills">
+        <h2 class="mt-4 mb-4">Skills</h2>
+        <div class="skills__content d-flex flex-column align-items-center flex-md-row align-items-md-start">
+          <div class="col-12 col-md-4 mb-5 mb-lg-0">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action active" id="list-html-list" data-bs-toggle="list" href="#list-html" role="tab" aria-controls="home">HTML</a>
+              <a class="list-group-item list-group-item-action" id="list-styling-list" data-bs-toggle="list" href="#list-styling" role="tab" aria-controls="profile">Styling</a>
+              <a class="list-group-item list-group-item-action" id="list-js-list" data-bs-toggle="list" href="#list-js" role="tab" aria-controls="messages">Javascript</a>
+              <a class="list-group-item list-group-item-action" id="list-design-list" data-bs-toggle="list" href="#list-design" role="tab" aria-controls="settings">Design</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 ms-md-3">
+            <div class="tab-content text-start" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-html" role="tabpanel" aria-labelledby="list-html-list">With every website there's the importance of having your site accessible & SEO optimized, this because you want google and other search engines to favour your website when users are searching. With me on your team you've got that covered. With this, and many other sites I've developed, it has never been neglected & always been a priority instead. Smart usage of HTML elements creates an easier to read code, both for further development & for assistant programs.</div>
+              <div class="tab-pane fade" id="list-styling" role="tabpanel" aria-labelledby="list-styling-list">Styling can often become a complex maze with no way out. Organizing your files, using the same naming convention on all your elements & writing smart classes is a good place to start. I've got your project covered with smart namings, great organization & tables of content, making it easier to locate, read and change that one line that's causing your text to display wrong.</div>
+              <div class="tab-pane fade" id="list-js" role="tabpanel" aria-labelledby="list-js-list">What's better than vanilla icecream? I'm honestly quite sure that there's nothing that beats it. Vanilla JS is an increadible language that's hard to master, but with a solid understanding I'm on your team. Writing dynamic solutions that'll last you till the end of time & sort all your needs. Following smart namings & organization the scripts will be easy to read & quick to load.</div>
+              <div class="tab-pane fade" id="list-design" role="tabpanel" aria-labelledby="list-design-list">Following today's standards you & me together will be able to get a understanding of your users, & create a sleek website following the principles of UX & UI design. The designs I offer are modern & communicate throughout the entire website. Just take a look at the examples above!</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container container__contact pt-5" id="contact">
+        <h2 class="mt-5 mb-5">Contact</h2>
+        <section class="error-container"></section>
+        <div class="contact__wrapper d-flex flex-column flex-md-row">
+          <form class="contact-form col-8 order-1 order-md-0">
+            <div>
+              <label for="fullName">
+                Name
+                <span class="asterisk">*</span></label
+              >
+              <input type="text" id="fullName" name="fullName" />
+              <span class="error-txt" id="fullNameError">Can not be left empty</span>
+            </div>
+            <div>
+              <label for="email">
+                Email
+                <span class="asterisk">*</span>
+                <span class="asterisk-txt">(must be a valid email address)</span>
+              </label>
+              <input type="text" id="email" name="email" />
+              <span class="error-txt" id="emailError">Must be a valid email address</span>
+            </div>
+            <div>
+              <label for="subject">
+                Subject
+                <span class="asterisk">*</span>
+                <span class="asterisk-txt">(minimum 15 characters)</span>
+              </label>
+              <input type="text" id="subject" name="subject" />
+              <span class="error-txt" id="subjectError">Must be at least 15 characters long</span>
+            </div>
+            <div>
+              <label for="message">
+                Message
+                <span class="asterisk">*</span>
+                <span class="asterisk-txt">(minimum 25 characters)</span>
+              </label>
+              <textarea name="message" id="message"></textarea>
+              <span class="error-txt" id="messageError">Must be at least 25 characters long</span>
+            </div>
+            <button class="contact-btn" type="button">Send</button>
+          </form>
+          <!-- end of form, start of listgroup -->
+          <ul class="list-group list-group-flush ms-5 order-0 order-md-1">
+            <li class="list-group-item pb-5 mb-5 d-flex"><span class="material-icons">arrow_right</span>6013 Ålesund, Norway</li>
+            <li class="list-group-item pb-5 mb-5 d-flex"><span class="material-icons">arrow_right</span>Gamle Flisnesvegen 29</li>
+            <li class="list-group-item pb-5 mb-5 d-flex"><span class="material-icons">arrow_right</span>+47 929 90 707</li>
+            <li class="list-group-item pb-5 mb-5 d-flex"><span class="material-icons">arrow_right</span>post@dennisl.no</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-5 pt-5 pb-3">
+      <p>&copy; Copyright 2021 <em>Dennis Løvold</em>. All rights reserved.</p>
+    </footer>
+    <!-- change nav color on scorll  -->
+    <script src="js/scroll.js"></script>
+    <!-- Contact form script -->
+    <script src="js/contact.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

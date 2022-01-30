@@ -1,0 +1,229 @@
+/* 
+Split into 4 sections & 1 sub-section:
+
+Hero section
+
+Work section
+ - Card styling
+
+Skills section
+
+Contact section
+
+*/
+
+.container {
+  position: relative;
+  &__work,
+  &__skills {
+    margin-bottom: 10rem;
+  }
+
+  /* Hero section */
+  &__hero {
+    text-align: center;
+    height: 100vh;
+  }
+
+  /* Work section */
+  &__work {
+    text-align: center;
+
+    /* Card styling */
+    .container__cards {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+
+      .container__card {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 1rem 0 2rem 0;
+        text-align: left;
+        .card {
+          &__top {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            h3 {
+              margin-top: 1.3rem;
+              color: $yellow;
+            }
+            p {
+              margin-top: 0.4rem;
+            }
+          }
+          &__image {
+            position: relative;
+            transition: transform 0.15s ease-in-out;
+
+            &:hover {
+              transform: translateY(-7px);
+              transition: transform 0.15s ease-in-out;
+            }
+
+            img {
+              width: 100%;
+              max-height: 500px;
+              object-fit: cover;
+              border-radius: 5px;
+              box-shadow: var($dark);
+              cursor: pointer;
+            }
+
+            a {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              z-index: 2;
+            }
+          }
+          &__bottom {
+            display: flex;
+            gap: 1rem;
+
+            a {
+              color: $red;
+            }
+          }
+        }
+      }
+    } /* Card styling end */
+  } /* Work section end */
+
+  /* Skills section */
+  &__skills {
+    text-align: center;
+
+    .skills__content {
+      .tab-pane {
+        font-weight: 500;
+      }
+      .list-group-item {
+        background: rgba($light, 1);
+        &.active {
+          color: $dark;
+          background: $yellow;
+          border-color: $yellow;
+        }
+      }
+    }
+  } /* Skills section end */
+
+  /* Contact section */
+  &__contact {
+    text-align: center;
+
+    .contact__wrapper {
+      align-items: center;
+    }
+
+    .contact-form {
+      text-align: left;
+      input {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 40px;
+        border: none;
+        background: $light;
+        position: relative;
+        padding: 0 0.5rem;
+        font-size: 1rem;
+        font-family: "Open Sans", sans-serif;
+      }
+      input:focus,
+      textarea:focus {
+        font-size: 1.05rem;
+        outline: none;
+      }
+
+      textarea {
+        font-family: "Open Sans", sans-serif;
+        padding: 0.3rem 0.5rem;
+        border: none;
+        background: $light;
+        font-size: 1rem;
+        height: 150px;
+        width: 100%;
+        resize: vertical;
+        max-height: 350px;
+      }
+
+      label {
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: $yellow;
+      }
+
+      label[for="fullName"] {
+        margin-top: 0;
+      }
+      .contact-btn {
+        border: none;
+        width: 25%;
+        min-width: 100px;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.2rem;
+        margin: 2.5rem 0;
+        padding: 0.9rem;
+        background: $yellow;
+        font-size: 1.2rem;
+        color: $dark;
+        font-weight: 500;
+      }
+
+      .asterisk {
+        color: $red;
+      }
+
+      .asterisk-txt {
+        color: $light;
+        font-weight: 300;
+        font-size: 1rem;
+      }
+      .error-txt {
+        display: none;
+        font-weight: 500;
+        color: $red;
+      }
+    }
+
+    /* Error styling */
+    div.status {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    div.status p.status-txt {
+      color: $red;
+      font-weight: 500;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 1rem;
+    }
+    /* List group styling */
+    .list-group-item {
+      background: none;
+      color: $light;
+      border-color: $light;
+
+      .material-icons {
+        color: $yellow;
+      }
+    }
+  } /* Contact section end */
+} /* .container ends */
+
+@media (min-width: 768px) {
+  .container__work .container__cards .container__card {
+    width: 50%;
+  }
+}
